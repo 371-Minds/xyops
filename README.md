@@ -52,6 +52,12 @@ Check out our official docs site here: **[xyOps Documentation](https://docs.xyop
 
 Full documentation is also provided inside the xyOps app.  Just click the "Documentation" link in the sidebar.
 
+## MCP for AI Agents
+
+xyOps now includes a standalone MCP server entrypoint for agent-driven automation.  It can manage xyOps over the existing REST API and includes Block Goose-backed integrations for **Conway.tech**, **RackNerd**, **Akash**, and **IO Cloud**.
+
+See **[docs/mcp.md](docs/mcp.md)** for configuration and launch instructions.
+
 # Contributing
 
 Please read our **[Contributing Guide](https://github.com/pixlcore/xyops/blob/main/CONTRIBUTING.md)** before opening a pull request.

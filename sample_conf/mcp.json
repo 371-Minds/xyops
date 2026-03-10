@@ -1,0 +1,27 @@
+{
+	"backend": "block-goose",
+	"xyops": {
+		"api_url": "http://localhost:5522",
+		"api_key": "",
+		"timeout_sec": 30
+	},
+	"block_goose": {
+		"base_url": "https://block-goose.example.com/api",
+		"api_key": "",
+		"timeout_sec": 30,
+		"providers": {
+			"conway-tech": {
+				"path": "/providers/conway-tech"
+			},
+			"racknerd": {
+				"path": "/providers/racknerd"
+			},
+			"akash": {
+				"path": "/providers/akash"
+			},
+			"io-cloud": {
+				"path": "/providers/io-cloud"
+			}
+		}
+	}
+}
