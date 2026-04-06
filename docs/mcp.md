@@ -8,16 +8,38 @@ This lets your agent backend connect to one MCP endpoint while keeping xyOps its
 
 ## Included Tools
 
-The MCP server exposes the following tools:
+The MCP server exposes the following tools, organized by the component they target.
 
-- `xyops_ping`
-- `xyops_list_servers`
-- `xyops_list_events`
-- `xyops_list_jobs`
-- `xyops_run_event`
-- `xyops_list_plugins`
-- `xyops_list_integrations`
-- `xyops_call_integration`
+### Core
+
+- `xyops_ping` — Check API connectivity.
+- `xyops_list_servers` — List registered worker servers.
+- `xyops_list_events` — List events, optionally filtered by category or plugin.
+- `xyops_list_jobs` — Search completed and active jobs.
+- `xyops_run_event` — Run an event immediately.
+- `xyops_list_plugins` — List available plugins.
+
+### Core Concepts
+
+- `xyops_list_categories` — List event and workflow categories.
+- `xyops_list_channels` — List notification channels.
+- `xyops_list_tags` — List tags.
+- `xyops_list_buckets` — List data buckets.
+- `xyops_list_secrets` — List secrets (metadata only; values are never returned).
+
+### Monitoring & Operations
+
+- `xyops_list_groups` — List server groups.
+- `xyops_list_monitors` — List monitor definitions.
+- `xyops_list_alerts` — List alert definitions.
+- `xyops_search_tickets` — Search tickets.
+- `xyops_create_ticket` — Create a new ticket.
+
+### Integrations
+
+- `xyops_list_web_hooks` — List configured web hooks.
+- `xyops_list_integrations` — List Block Goose provider integrations.
+- `xyops_call_integration` — Invoke a provider integration via Block Goose.
 
 The integration tools are pre-wired to these provider IDs:
 
